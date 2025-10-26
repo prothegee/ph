@@ -38,7 +38,14 @@ node_modules
 
 /CMakePresets.json
 
+dbuild.*
+
 compile_commands.json
+
+ph_config.h
+ph_export.h
+ph_export_static.h
+ph_export_shared.h
 
 ##
 ## file: exclude
