@@ -1,0 +1,4 @@
+#ifndef PH_FUNC_UTILITY_H
+#define PH_FUNC_UTILITY_H
+#endif // PH_FUNC_UTILITY_H
+
