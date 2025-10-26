@@ -2,7 +2,7 @@
 
 ph project resource code
 
-> personal module library treatement for c project
+> personal module library treatment for c project
 
 <br>
 
