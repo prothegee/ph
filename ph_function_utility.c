@@ -1,0 +1,12 @@
+#include "ph_function_utility.h"
+
+#include <string.h>
+
+bool ph_str_is_numeric(const char* input) {
+    if (strlen(input) <= 0) {
+        return false;
+    }
+
+    return false;
+}
+
