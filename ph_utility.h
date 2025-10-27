@@ -1,6 +1,5 @@
-#ifndef PH_FUNC_UTILITY_H
-#define PH_FUNC_UTILITY_H
-#include "stdbool.h"
+#ifndef PH_UTILITY_H
+#define PH_UTILITY_H
 
 /// @brief check if input is numeric evaluation
 ///

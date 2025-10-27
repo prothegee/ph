@@ -119,16 +119,16 @@ if(NOT DEFINED PH_HEADER_FILES)
     set(PH_HEADER_FILES)
 endif()
 list(APPEND PH_HEADER_FILES
-    "${CMAKE_SOURCE_DIR}/ph_function_date_and_time.h"
-    "${CMAKE_SOURCE_DIR}/ph_function_utility.h"
+    "${CMAKE_SOURCE_DIR}/ph_date_and_time.h"
+    "${CMAKE_SOURCE_DIR}/ph_utility.h"
 )
 
 if(NOT DEFINED PH_SOURCE_FILES)
     set(PH_SOURCE_FILES)
 endif()
 list(APPEND PH_SOURCE_FILES
-    "${CMAKE_SOURCE_DIR}/ph_function_date_and_time.c"
-    "${CMAKE_SOURCE_DIR}/ph_function_utility.c"
+    "${CMAKE_SOURCE_DIR}/ph_date_and_time.c"
+    "${CMAKE_SOURCE_DIR}/ph_utility.c"
 )
 
 set(PH_OUTPUT_NAME "ph")

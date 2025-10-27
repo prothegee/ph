@@ -1,6 +1,8 @@
-#ifndef PH_TYPE_STRING_H
-#define PH_TYPE_STRING_H
-#include "ph_constant_size.h"
+#ifndef PH_STRING_H
+#define PH_STRING_H
+#include <string.h>
+
+#include "ph_size.h"
 
 // --------------------------------------------------------- //
 
@@ -21,5 +23,5 @@ typedef char str64_t[PH_SIZE_64];
 
 // --------------------------------------------------------- //
 
-#endif // PH_TYPE_STRING_H
+#endif // PH_STRING_H
 
