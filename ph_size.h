@@ -1,5 +1,5 @@
-#ifndef PH_CONSTANT_SIZE_H
-#define PH_CONSTANT_SIZE_H
+#ifndef PH_SIZE_H
+#define PH_SIZE_H
 
 // --------------------------------------------------------- //
 
@@ -54,5 +54,5 @@
 
 // --------------------------------------------------------- //
 
-#endif // PH_CONSTANT_SIZE_H
+#endif // PH_SIZE_H
 
