@@ -4,8 +4,8 @@ cmake -S . -B build/debug \
       -DCMAKE_C_STANDARD=23 \
       -DCMAKE_C_FLAGS="-std=c23" \
       -DCMAKE_EXPORT_COMPILE_COMMANDS=1 \
-      -DPH_BUILD_TEST=OFF \
-      -DPH_BUILD_TOOL=OFF;
+      -DPH_BUILD_TEST=ON \
+      -DPH_BUILD_TOOL=ON;
 
 ln -sf build/debug/compile_commands.json;
 
