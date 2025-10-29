@@ -26,7 +26,15 @@ int32_t ph_local_timezone_second() {
     return difftime(local_time, utc_as_local);
 }
 
-const char* ph_local_timezone_string() {
-    return "";
+char* ph_local_timezone_string() {
+    char tz[32];
+    time_t now = time(nullptr);
+    struct tm* local = localtime(&now);
+
+    strftime(tz, sizeof(tz), "%Z", local);
+
+    char* res = tz;
+
+    return res;
 }
 
