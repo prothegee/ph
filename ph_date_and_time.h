@@ -12,7 +12,10 @@ int32_t ph_local_timezone_hour();
 /// @return int32_t
 int32_t ph_local_timezone_second();
 
-const char* ph_local_timezone_string();
+/// @brief get local timezone string
+///
+/// @return char* 
+char* ph_local_timezone_string();
 
 #endif // PH_DATE_AND_TIME_H
 
