@@ -1,6 +1,6 @@
 #include "ph_utility.h"
 
-#include <ph_string.h>
+#include <string.h>
 
 bool ph_str_is_numeric(const char* input) {
     if (strlen(input) <= 0) {

@@ -1,7 +1,27 @@
+/// ### file: ph_string.h
+/// 
+/// ### author: Prana Ron
+/// 
+/// ---------------------------------------------------------
+/// 
+/// ### brief:
+/// ph string header
+/// 
+/// ### note:
+/// n/a
+/// 
+/// ---------------------------------------------------------
+/// 
+/// ### copyright:
+/// 
+/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// 
+/// ### contributors:
+/// 
+/// - Prana Ron // @prothegee // prothegee@proton.me
+/// 
 #ifndef PH_STRING_H
 #define PH_STRING_H
-#include <string.h>
-
 #include "ph_size.h"
 
 // --------------------------------------------------------- //
@@ -20,6 +40,9 @@ typedef char str36_t[PH_SIZE_36];
 
 /// fixed 64 size char string
 typedef char str64_t[PH_SIZE_64];
+
+/// fixed 128 size char string
+typedef char str128_t[PH_SIZE_128_WIDTH];
 
 // --------------------------------------------------------- //
 

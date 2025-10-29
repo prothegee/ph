@@ -37,6 +37,7 @@ node_modules
 /.zed/*.json
 
 /CMakePresets.json
+/test_*
 
 dbuild.*
 
