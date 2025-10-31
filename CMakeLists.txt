@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.25)
 set(PH_VERSION_MAJOR 0)
 set(PH_VERSION_MINOR 1)
 set(PH_VERSION_PATCH 0)
-set(PH_VERSION_RELEASE_DATE 20251029)
+set(PH_VERSION_RELEASE_DATE 20251031)
 
 set(PH_FEATURES_LIST)
 set(PH_C_COMPILER_NAME)
@@ -119,6 +119,14 @@ if(NOT DEFINED PH_HEADER_FILES)
     set(PH_HEADER_FILES)
 endif()
 list(APPEND PH_HEADER_FILES
+    "${CMAKE_SOURCE_DIR}/ph_config.h"
+    "${CMAKE_SOURCE_DIR}/ph_export.h"
+    "${CMAKE_SOURCE_DIR}/ph_buffer.h"
+    "${CMAKE_SOURCE_DIR}/ph_numeric.h"
+    "${CMAKE_SOURCE_DIR}/ph_result.h"
+    "${CMAKE_SOURCE_DIR}/ph_size.h"
+    "${CMAKE_SOURCE_DIR}/ph_string.h"
+    # utils
     "${CMAKE_SOURCE_DIR}/ph_date_and_time.h"
     "${CMAKE_SOURCE_DIR}/ph_utility.h"
 )
@@ -157,8 +165,8 @@ else()
     )
 endif()
 
-string(APPEND PH_FEATURES_LIST "#----------------------------------#\n")
-include(package-handler.conf.cmake)
+# RESERVED
+# string(APPEND PH_FEATURES_LIST "#----------------------------------#\n")
 
 # compiler options
 set(PH_GNU false)
