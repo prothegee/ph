@@ -138,6 +138,7 @@ list(APPEND PH_SOURCE_FILES
     "${CMAKE_SOURCE_DIR}/ph_date_and_time.c"
     "${CMAKE_SOURCE_DIR}/ph_utility.c"
 )
+list(APPEND PH_SOURCE_FILES "${PH_HEADER_FILES}")
 
 set(PH_OUTPUT_NAME "ph")
 

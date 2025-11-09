@@ -2,7 +2,7 @@
 
 #include <time.h>
 
-int32_t ph_local_timezone_hour() {
+i32_t ph_local_timezone_hour() {
     time_t now = time(nullptr);
 
     struct tm local_tm = *localtime(&now);
@@ -14,7 +14,7 @@ int32_t ph_local_timezone_hour() {
     return difftime(local_time, utc_as_local) / 3'600;
 }
 
-int32_t ph_local_timezone_second() {
+i32_t ph_local_timezone_second() {
     time_t now = time(nullptr);
 
     struct tm local_tm = *localtime(&now);
@@ -26,7 +26,7 @@ int32_t ph_local_timezone_second() {
     return difftime(local_time, utc_as_local);
 }
 
-char* ph_local_timezone_string() {
+str_t* ph_local_timezone_string() {
     char tz[32];
     time_t now = time(nullptr);
     struct tm* local = localtime(&now);
