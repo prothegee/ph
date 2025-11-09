@@ -32,7 +32,7 @@
 ///
 /// @note for binary data
 typedef struct _buffer_byte_t {
-    ui8_t* data;
+    u8_t* data;
     size_t size;
     size_t capacity;
 } buffer_byte_t; // _buffer_byte_t
