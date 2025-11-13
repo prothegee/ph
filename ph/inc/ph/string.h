@@ -1,4 +1,4 @@
-/// ### file: ph_string.h
+/// ### file: string.h
 /// 
 /// ### author: Prana Ron
 /// 
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 
@@ -22,7 +22,7 @@
 /// 
 #ifndef PH_STRING_H
 #define PH_STRING_H
-#include "ph_size.h"
+#include "size.h"
 
 #include <string.h>
 

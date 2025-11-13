@@ -1,4 +1,4 @@
-/// ### file: ph_result.h
+/// ### file: result.h
 /// 
 /// ### author: Prana Ron
 /// 
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2026 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 
@@ -22,12 +22,12 @@
 /// 
 #ifndef PH_RESULT_H
 #define PH_RESULT_H
-#include "ph_numeric.h"
+#include "numeric.h"
 
-enum result_e : i8_t {
-    result_ok = 0,
-    result_error = 1,
-}; // enum result_e
+enum ph_result_e : i8_t {
+    ph_result_err = 0,
+    ph_result_ok = 1,
+}; // enum ph_result_e
 
 #endif // PH_RESULT_H
 

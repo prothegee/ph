@@ -119,24 +119,26 @@ if(NOT DEFINED PH_HEADER_FILES)
     set(PH_HEADER_FILES)
 endif()
 list(APPEND PH_HEADER_FILES
-    "${CMAKE_SOURCE_DIR}/ph_config.h"
-    "${CMAKE_SOURCE_DIR}/ph_export.h"
-    "${CMAKE_SOURCE_DIR}/ph_buffer.h"
-    "${CMAKE_SOURCE_DIR}/ph_numeric.h"
-    "${CMAKE_SOURCE_DIR}/ph_result.h"
-    "${CMAKE_SOURCE_DIR}/ph_size.h"
-    "${CMAKE_SOURCE_DIR}/ph_string.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/buffer.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/config.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/export.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/export_shared.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/export_static.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/numeric.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/result.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/size.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/string.h"
     # utils
-    "${CMAKE_SOURCE_DIR}/ph_date_and_time.h"
-    "${CMAKE_SOURCE_DIR}/ph_utility.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/date_and_time.h"
+    "${CMAKE_SOURCE_DIR}/ph/inc/ph/utility.h"
 )
 
 if(NOT DEFINED PH_SOURCE_FILES)
     set(PH_SOURCE_FILES)
 endif()
 list(APPEND PH_SOURCE_FILES
-    "${CMAKE_SOURCE_DIR}/ph_date_and_time.c"
-    "${CMAKE_SOURCE_DIR}/ph_utility.c"
+    "${CMAKE_SOURCE_DIR}/ph/src/ph/date_and_time.c"
+    "${CMAKE_SOURCE_DIR}/ph/src/ph/utility.c"
 )
 list(APPEND PH_SOURCE_FILES "${PH_HEADER_FILES}")
 
@@ -234,33 +236,33 @@ endif()
 
 generate_export_header(ph
     EXPORT_FILE_NAME
-        ${CMAKE_SOURCE_DIR}/ph_export.h
+        ${CMAKE_SOURCE_DIR}/ph/inc/ph/export.h
 )
 generate_export_header(ph_static
     EXPORT_FILE_NAME
-        ${CMAKE_SOURCE_DIR}/ph_export_static.h
+        ${CMAKE_SOURCE_DIR}/ph/inc/ph/export_static.h
 )
 generate_export_header(ph_shared
     EXPORT_FILE_NAME
-        ${CMAKE_SOURCE_DIR}/ph_export_shared.h
+        ${CMAKE_SOURCE_DIR}/ph/inc/ph/export_shared.h
 )
 
 configure_file(
-    ${CMAKE_SOURCE_DIR}/ph_config.in.h
-    ${CMAKE_SOURCE_DIR}/ph_config.h
+    ${CMAKE_SOURCE_DIR}/ph/inc/ph/config.in.h
+    ${CMAKE_SOURCE_DIR}/ph/inc/ph/config.h
 )
 
 target_compile_definitions(ph_shared PRIVATE PH_SHARED)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC
-        ${CMAKE_SOURCE_DIR}
-        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
+        ${CMAKE_SOURCE_DIR}/ph/inc
+        $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>/ph/inc
 )
 
 target_sources(${PROJECT_NAME}
     PRIVATE
-        ${CMAKE_SOURCE_DIR}
+        ${CMAKE_SOURCE_DIR}/ph/src/ph
 )
 
 # each target
