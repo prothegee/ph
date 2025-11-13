@@ -1,4 +1,4 @@
-/// ### file: ph_buffer.h
+/// ### file: buffer.h
 /// 
 /// ### author: Prana Ron
 /// 
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 
@@ -22,9 +22,9 @@
 /// 
 #ifndef PH_BUFFER_H
 #define PH_BUFFER_H
-#include "ph_numeric.h"
-#include "ph_string.h"
-#include "ph_result.h"
+#include "numeric.h"
+#include "string.h"
+#include "result.h"
 
 // --------------------------------------------------------- //
 
@@ -49,7 +49,7 @@ typedef struct _buffer_byte_t {
 ///
 /// @note for text data
 typedef struct _buffer_char_t {
-    char_t* data;
+    str_t* data;
     size_t size;
     size_t capacity;
 } buffer_char_t; // _buffer_char_t
@@ -60,7 +60,7 @@ typedef struct _buffer_char_t {
 ///
 /// @note for generic data
 typedef struct _buffer_data_t {
-    uchar_t* data;
+    str_t* data;
     size_t size;
     size_t capacity;
 } buffer_data_t; // _buffer_data_t

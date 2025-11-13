@@ -1,11 +1,11 @@
-/// ### file: ph_size.h
+/// ### file: size.h
 /// 
 /// ### author: Prana Ron
 /// 
 /// ---------------------------------------------------------
 /// 
 /// ### brief:
-/// ph size header
+/// ph size header file
 /// 
 /// ### note:
 /// n/a
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 

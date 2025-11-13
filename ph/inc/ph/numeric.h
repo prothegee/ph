@@ -1,11 +1,11 @@
-/// ### file: ph_numeric.h
+/// ### file: numeric.h
 /// 
 /// ### author: Prana Ron
 /// 
 /// ---------------------------------------------------------
 /// 
 /// ### brief:
-/// ph numeric header
+/// ph numeric header file
 /// 
 /// ### note:
 /// n/a
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 

@@ -1,4 +1,4 @@
-/// ### file: ph_date_and_time.h
+/// ### file: date_and_time.h
 /// 
 /// ### author: Prana Ron
 /// 
@@ -14,7 +14,7 @@
 /// 
 /// ### copyright:
 /// 
-/// - (c) 2025 Prana Ron // @prothegee // prothegee@proton.me
+/// - (c) Prana Ron // @prothegee // prothegee@proton.me
 /// 
 /// ### contributors:
 /// 
@@ -22,8 +22,8 @@
 /// 
 #ifndef PH_DATE_AND_TIME_H
 #define PH_DATE_AND_TIME_H
-#include <ph_numeric.h>
-#include <ph_string.h>
+#include "numeric.h"
+#include "string.h"
 
 /// @brief get local timezone by hour
 ///
@@ -37,8 +37,18 @@ i32_t ph_local_timezone_second();
 
 /// @brief get local timezone string
 ///
+/// @note required free after used
+///
 /// @return str_t* 
 str_t* ph_local_timezone_string();
+
+/// @brief get timestamp with nanosecond precise
+///
+/// @note default UTC 0
+/// @note required free after used
+///
+/// @return str_t*
+str_t* ph_timestamp_ns();
 
 #endif // PH_DATE_AND_TIME_H
 

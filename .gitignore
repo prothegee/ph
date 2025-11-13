@@ -43,10 +43,10 @@ dbuild.*
 
 compile_commands.json
 
-ph_config.h
-ph_export.h
-ph_export_static.h
-ph_export_shared.h
+config.h
+export.h
+export_static.h
+export_shared.h
 
 ##
 ## file: exclude
