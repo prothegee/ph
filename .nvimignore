@@ -1,16 +1,17 @@
 ##
 ## directory
 ##
-.bin
 .git
+.bin
 .out
 .log
 .logs
 .build
 .cache
+.config
 .target
-
 .svelte-kit
+.node_modules
 
 bin
 out
@@ -18,8 +19,9 @@ log
 logs
 build
 cache
+config
 target
-
+svelte-kit
 node_modules
 
 ##
@@ -27,10 +29,33 @@ node_modules
 ##
 *.bak*
 *.zip
+
 *Zone.Identifier
 
 ##
-## file
+## file: include
 ##
-compile_commands.json
+.config/config.*.json
+.nvim/*.json
+.vscode/*.json
+.zed/*.json
 
+CMakePresets.json
+config/config.*.json
+compile_commands.json
+config.h
+config.hh
+config.hpp
+export*.h
+export*.hh
+export*.hpp
+
+##
+## file: exclude
+##
+!.config/config.*.json.template
+!.nvim/*.json.template
+!.vscode/*.json.tempalte
+!.zed/*.json.template
+
+config/config.*.json.template

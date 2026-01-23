@@ -7,4 +7,3 @@ BinPackParameters: true
 AllowAllParametersOfDeclarationOnNextLine: false
 PointerAlignment: Left
 ColumnLimit: 80
-
